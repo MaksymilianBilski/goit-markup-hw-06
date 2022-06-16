@@ -245,6 +245,10 @@ figure {
     position: relative;
 }
 
+.index-modal-form {
+    display: flex;
+}
+
 .modal {
     min-width: 528px;
     height: 581px;
@@ -650,7 +654,9 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+    margin: 72px 0 90px 70px;
 }
 
 .index-footer2>p {
@@ -696,27 +702,30 @@ figure {
     height: 20px;
 }
 
-.index-newsletter{
+.index-newsletter {
     margin: 0 auto;
+    width: 570px;
+    height: 83px;
+    margin: 72px 0 90px 70px;
 }
 
-.index-footer-form{
+.index-footer-form {
     display: flex;
 }
 
-.index-newsletter h3{
+.index-newsletter h3 {
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--index-third-font-color);
-        margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--index-third-font-color);
+    margin-bottom: 20px;
 }
 
-.index-email-placeholder2{
+.index-email-placeholder2 {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255, 0.3);
     resize: both;
@@ -726,28 +735,33 @@ figure {
     padding-left: 16px;
 }
 
-.index-sign{
+.index-newsletter-button {
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.06em;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        background-color: var(--index-link-color);
-        border: none;
-        border-radius: 4px;
-        color: var(--index-third-font-color);
-        margin-left: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--index-link-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--index-third-font-color);
+    margin-left: 12px;
+    cursor: pointer;
 }
 
-.index-sign svg{
+.index-newsletter-button svg {
     width: 24px;
     height: 24px;
+}
+
+.index-email-placeholder2:hover {
+    border: 1px solid var(--index-link-color);
 }
 
 /* --- I-N-D-E-X- -F-O-O-T-E-R --- */
@@ -1041,6 +1055,7 @@ figure {
     line-height: 1.714em;
     letter-spacing: 0.03em;
     padding: 20px 0 9px 0;
+    font-family: Roboto;
 }
 
 .portfolio-footer-contacts {
@@ -1059,6 +1074,7 @@ figure {
     font-size: 14px;
     line-height: 1.714em;
     letter-spacing: 0.03em;
+    font-family: Roboto;
     color: var(--portfolio-second-font-color);
     text-decoration: none;
 }
@@ -1076,7 +1092,9 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+    margin: 72px 0 90px 70px;
 }
 
 .portfolio-footer2>p {
@@ -1121,6 +1139,72 @@ figure {
 .portfolio-footer-icon:focus {
     background-color: var(--index-icon-hover-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+}
+
+.portfolio-newsletter {
+    margin: 0 auto;
+    width: 570px;
+    height: 83px;
+    margin: 72px 0 90px 70px;
+}
+
+.portfolio-footer-form {
+    display: flex;
+}
+
+.portfolio-newsletter h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--index-third-font-color);
+    margin-bottom: 20px;
+}
+
+.portfolio-newsletter-email {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    resize: both;
+    min-height: 50px;
+    min-width: 358px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.portfolio-newsletter-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--index-link-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--index-third-font-color);
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.portfolio-newsletter-email:hover {
+    border: 1px solid var(--portfolio-link-color);
+}
+
+.portfolio-newsletter-email:active {
+    border: 1px solid var(--portfolio-link-color);
+}
+
+.portfolio-newsletter-button svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* --- -P-O-R-T-F-O-L-I-O- -F-O-O-T-E-R --- */
