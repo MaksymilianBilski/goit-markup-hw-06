@@ -362,13 +362,19 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="index-modal-form">
-            <spam>Imie</spam>
+            <span><svg width="18" height="18"><use href="images/sprite.svg#icon-person-black-18dp-1"></use></svg>Imie</span>
             <input type="textarea">
-            <span>Telefon</span>
+            <span><svg width="18" height="18"><use href="images/sprite.svg#icon-phone-black-18dp-1"></use></svg>Telefon</span>
             <input type="tel" name="phone-number">
             <span>Email</span>
-            <input type="email">
-            </form>
+            <input type="email"> <svg width="18" height="18">
+                <use href="images/sprite.svg#icon-email-black-18dp-1"></use>
+            </svg>
+            <span>Komentarz</span>
+            <input type="textarea" placeholder="Wprowadź tekst">
+            <input type="checkbox"><p>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span></p>
+        <button type="submit">Wyślij</button>   
+        </form>
             <button class="index-close-btn" type="button" data-modal-close>
                 <div>X</div>
             </button>
