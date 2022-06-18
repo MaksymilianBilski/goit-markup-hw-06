@@ -245,9 +245,64 @@ figure {
     position: relative;
 }
 
+.modal-span1{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin: 40px 40px 30px 40px;
+}
+
 .index-modal-form {
     display: flex;
     flex-direction: column;
+}
+
+.index-modal-form span:not(:first-child){
+    margin-left: 40px;
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+}
+
+.input-modal{
+    position: relative;
+        margin-left: 40px;
+            width: 448px;
+            height: 40px;
+                margin-bottom: 10px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                    border-radius: 4px;
+}
+
+.index-modal-user {
+    position: absolute;
+    top: 122px;
+    left: 55px;
+}
+
+.index-modal-tel {
+    position: absolute;
+   top: 190px;
+   left: 54.27px;
+}
+
+.index-modal-email {
+    position: absolute;
+    top: 259px;
+    left: 53.5px;
+}
+
+.comment-place{
+    height: 448px;
+    height: 120px;
 }
 
 .modal {

@@ -362,16 +362,21 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="index-modal-form">
-            <span><svg width="18" height="18"><use href="images/sprite.svg#icon-person-black-18dp-1"></use></svg>Imie</span>
-            <input type="textarea">
-            <span><svg width="18" height="18"><use href="images/sprite.svg#icon-phone-black-18dp-1"></use></svg>Telefon</span>
-            <input type="tel" name="phone-number">
+                <span class="modal-span1">Zostaw swoje dane w formularzu poniżej</span>
+            <span>Imie</span>
+            <input type="textarea" class="input-modal user-place"><svg width="18" height="18" class="index-modal-user">
+                <use href="images/sprite.svg#icon-person-black-18dp-1"></use>
+            </svg>
+            <span>Telefon</span>
+            <input type="tel" name="phone-number" class="input-modal tel-place"><svg width="18" height="18" class="index-modal-tel">
+                <use href="images/sprite.svg#icon-phone-black-18dp-1"></use>
+            </svg>
             <span>Email</span>
-            <input type="email"> <svg width="18" height="18">
+            <input type="email" class="input-modal email-place"><svg width="18" height="18" class="index-modal-email">
                 <use href="images/sprite.svg#icon-email-black-18dp-1"></use>
             </svg>
             <span>Komentarz</span>
-            <input type="textarea" placeholder="Wprowadź tekst">
+            <input type="textarea" placeholder="Wprowadź tekst" class="input-modal comment-place">
             <input type="checkbox"><p>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span></p>
         <button type="submit">Wyślij</button>   
         </form>
