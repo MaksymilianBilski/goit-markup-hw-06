@@ -291,10 +291,12 @@ figure {
 .input-modal:focus-within {
     outline: none;
     border-color: var(--index-link-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .index-modal-label:focus-within {
     fill: var(--index-link-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .user-place {
@@ -349,6 +351,21 @@ figure {
     display: flex;
     align-items: center;
     margin: 20px 0px 30px 54px;
+}
+
+.tekst::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 10px;
+    margin: 10px 5px 0 10px;
+    border: 2px solid salmon;
+}
+
+.index-checkbox:checked+.index-checkbox::before {
+    background-color: red;
+    color: yellow;
+    border: 5px dotted darkolivegreen;
 }
 
 .index-form-checkbox p {
@@ -895,10 +912,12 @@ figure {
 .index-newsletter-button svg {
     width: 24px;
     height: 24px;
+    fill: var(--index-third-font-color);
 }
 
 .index-email-placeholder2:hover {
     border: 1px solid var(--index-link-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 /* --- I-N-D-E-X- -F-O-O-T-E-R --- */
@@ -1333,15 +1352,18 @@ figure {
 
 .portfolio-newsletter-email:hover {
     border: 1px solid var(--portfolio-link-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.portfolio-newsletter-email:active {
+.portfolio-newsletter-email:focus {
     border: 1px solid var(--portfolio-link-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .portfolio-newsletter-button svg {
     width: 24px;
     height: 24px;
+    fill: var(--portfolio-third-font-color);
 }
 
 /* --- -P-O-R-T-F-O-L-I-O- -F-O-O-T-E-R --- */
