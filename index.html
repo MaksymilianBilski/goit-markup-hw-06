@@ -21,18 +21,18 @@
 <body>
     <header class="index-header">
         <div class="container">
-            <a class="index-upper-logo" href="https://maksymilianbilski.github.io/goit-markup-hw-05/"><span
+            <a class="index-upper-logo" href="https://maksymilianbilski.github.io/goit-markup-hw-06/"><span
                     class="index-top-web">Web</span>Studio</a>
             <div class="index-header-div">
                 <nav>
                     <ul class="index-nav list">
-                        <li class="index-nav-li"><a href="https://maksymilianbilski.github.io/goit-markup-hw-05/"
+                        <li class="index-nav-li"><a href="https://maksymilianbilski.github.io/goit-markup-hw-06/"
                                 class="index-upper-link index-active">Agencja</a>
                         </li>
                         <li class="index-nav-li"><a
-                                href="https://maksymilianbilski.github.io/goit-markup-hw-05/portfolio.html"
+                                href="https://maksymilianbilski.github.io/goit-markup-hw-06/portfolio.html"
                                 class="index-upper-link">Portfolio</a></li>
-                        <li class="index-nav-li"><a href="https://maksymilianbilski.github.io/goit-markup-hw-05/"
+                        <li class="index-nav-li"><a href="https://maksymilianbilski.github.io/goit-markup-hw-06/"
                                 class="index-upper-link">Kontakt</a>
                         </li>
                     </ul>
@@ -317,7 +317,7 @@
     <footer class="index-footer">
         <div class="container">
             <section class="index-footer1">
-                <a class="index-bottom-logo" href="https://maksymilianbilski.github.io/goit-markup-hw-05/"><span
+                <a class="index-bottom-logo" href="https://maksymilianbilski.github.io/goit-markup-hw-06/"><span
                         class="index-bottom-web">Web</span>Studio</a>
                 <address class="index-address">m. Warszawa, Aleje Jerozolimskie 21</address>
                 <ul class="index-footer-contacts list">
@@ -353,8 +353,10 @@
             <section class="index-newsletter">
                 <h3>Zapisz się do newslettera</h3>
                 <form class="index-footer-form">
-                <input type="email" class="index-email-placeholder2" placeholder="E-mail">
-                <button type="submit" class="index-newsletter-button">Zapisz się<svg><use href="images/sprite.svg#icon-icon-send" width="20" height="20"></use></svg></button>
+                    <input type="email" class="index-email-placeholder2" placeholder="E-mail">
+                    <button type="submit" class="index-newsletter-button">Zapisz się<svg>
+                            <use href="images/sprite.svg#icon-icon-send" width="20" height="20"></use>
+                        </svg></button>
                 </form>
             </section>
         </div>
@@ -363,31 +365,38 @@
         <div class="modal">
             <form class="index-modal-form">
                 <span class="modal-span1">Zostaw swoje dane w formularzu poniżej</span>
-            <label for="user-place" class="index-modal-label">
-                <span>Imie</span>
-            <input type="textarea" class="input-modal user-place" name="user-place"><svg width="18" height="18" class="index-modal-user">
-                <use href="images/sprite.svg#icon-person-black-18dp-1"></use>
-            </svg>
-            </label>
-            <label class="index-modal-label">
-            <span>Telefon</span>
-            <input type="tel" name="phone-number" class="input-modal tel-place"><svg width="18" height="18" class="index-modal-tel">
-                <use href="images/sprite.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-            </label>
-            <label class="index-modal-label">
-            <span>Email</span>
-            <input type="email" class="input-modal email-place"><svg width="18" height="18" class="index-modal-email">
-                <use href="images/sprite.svg#icon-email-black-18dp-1"></use>
-            </svg>
-            </label>
-            <label class="index-modal-label">
-            <span>Komentarz</span>
-            <input type="textarea" placeholder="Wprowadź tekst" class="input-modal comment-place">
-            </label>
-            <input type="checkbox"><p>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span></p>
-        <button type="submit">Wyślij</button>   
-        </form>
+                <label for="user" class="index-modal-label">
+                    <span>Imie</span>
+                    <input type="textarea" class="input-modal user-place" name="user"><svg width="18" height="18"
+                        class="index-modal-user">
+                        <use href="images/sprite.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class="index-modal-label">
+                    <span>Telefon</span>
+                    <input type="tel" name="phone-number" class="input-modal tel-place"><svg width="18" height="18"
+                        class="index-modal-tel">
+                        <use href="images/sprite.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class="index-modal-label">
+                    <span>Email</span>
+                    <input type="email" class="input-modal email-place" name="email"><svg width="18" height="18"
+                        class="index-modal-email">
+                        <use href="images/sprite.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class="index-modal-label">
+                    <span>Komentarz</span>
+                    <input type="textarea" name="comment" placeholder="Wprowadź tekst"
+                        class="input-modal comment-place">
+                </label>
+                <label class="index-form-checkbox">
+                    <input name="checkbox" type="checkbox" class="index-checkbox">
+                    <p>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span>.</p>
+                </label>
+                <button type="submit">Wyślij</button>
+            </form>
             <button class="index-close-btn" type="button" data-modal-close>
                 <div>X</div>
             </button>
