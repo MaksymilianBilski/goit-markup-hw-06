@@ -353,19 +353,7 @@ figure {
     margin: 20px 0px 30px 54px;
 }
 
-.tekst::before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 10px;
-    margin: 10px 5px 0 10px;
-    border: 2px solid salmon;
-}
-
 .index-checkbox:checked+.index-checkbox::before {
-    background-color: red;
-    color: yellow;
-    border: 5px dotted darkolivegreen;
 }
 
 .index-form-checkbox p {
