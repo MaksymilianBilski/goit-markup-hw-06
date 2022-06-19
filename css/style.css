@@ -245,15 +245,15 @@ figure {
     position: relative;
 }
 
-.modal-span1{
+.modal-span1 {
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin: 40px 40px 30px 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 40px 40px 30px 40px;
 }
 
 .index-modal-form {
@@ -261,10 +261,15 @@ figure {
     flex-direction: column;
 }
 
-.index-modal-form span:not(:first-child){
+.index-modal-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.index-modal-label > span{
     margin-left: 40px;
-    margin-bottom: 4px;
-    font-family: 'Roboto';
+        margin-bottom: 4px;
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -272,14 +277,33 @@ figure {
         letter-spacing: 0.01em;
 }
 
-.input-modal{
+.input-modal {
     position: relative;
-        margin-left: 40px;
-            width: 448px;
-            height: 40px;
-                margin-bottom: 10px;
-                border: 1px solid rgba(33, 33, 33, 0.2);
-                    border-radius: 4px;
+    margin-left: 40px;
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+}
+
+.index-modal-label .user-place:focus-within {
+    border: 1px solid red;
+}
+
+
+
+
+.index-modal-label:focus-within{
+    fill: red;
+}
+
+
+
+
+
+.user-place {
+    padding-left: 45px;
 }
 
 .index-modal-user {
@@ -288,10 +312,16 @@ figure {
     left: 55px;
 }
 
+.tel-place{padding-left: 45px;}
+
 .index-modal-tel {
     position: absolute;
-   top: 190px;
-   left: 54.27px;
+    top: 190px;
+    left: 54.27px;
+}
+
+.email-place{
+    padding-left: 45px;
 }
 
 .index-modal-email {
@@ -300,21 +330,21 @@ figure {
     left: 53.5px;
 }
 
-.comment-place{
+.comment-place {
     width: 448px;
     height: 120px;
 }
 
-.comment-place{
+.comment-place {
     padding-bottom: 77px;
     padding-left: 16px;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .modal {

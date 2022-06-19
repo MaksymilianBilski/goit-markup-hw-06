@@ -363,20 +363,28 @@
         <div class="modal">
             <form class="index-modal-form">
                 <span class="modal-span1">Zostaw swoje dane w formularzu poniżej</span>
-            <span>Imie</span>
-            <input type="textarea" class="input-modal user-place"><svg width="18" height="18" class="index-modal-user">
+            <label for="user-place" class="index-modal-label">
+                <span>Imie</span>
+            <input type="textarea" class="input-modal user-place" name="user-place"><svg width="18" height="18" class="index-modal-user">
                 <use href="images/sprite.svg#icon-person-black-18dp-1"></use>
             </svg>
+            </label>
+            <label class="index-modal-label">
             <span>Telefon</span>
             <input type="tel" name="phone-number" class="input-modal tel-place"><svg width="18" height="18" class="index-modal-tel">
                 <use href="images/sprite.svg#icon-phone-black-18dp-1"></use>
             </svg>
+            </label>
+            <label class="index-modal-label">
             <span>Email</span>
             <input type="email" class="input-modal email-place"><svg width="18" height="18" class="index-modal-email">
                 <use href="images/sprite.svg#icon-email-black-18dp-1"></use>
             </svg>
+            </label>
+            <label class="index-modal-label">
             <span>Komentarz</span>
             <input type="textarea" placeholder="Wprowadź tekst" class="input-modal comment-place">
+            </label>
             <input type="checkbox"><p>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span></p>
         <button type="submit">Wyślij</button>   
         </form>
