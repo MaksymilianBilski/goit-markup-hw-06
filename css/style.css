@@ -347,26 +347,34 @@ figure {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.index-form-checkbox {
+.checkbox{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 20px 0px 30px 54px;
+    align-content: center;
+    margin: 20px 77px 30px 54px;
 }
 
 .index-checkbox:checked+.index-checkbox::before {
+    background-image: url(../images/iconcheck.svg);
+    border: none;
+    width: 12px;
+    height: 20px;
+    content: "";
+    display: inline-block;
 }
 
-.index-form-checkbox p {
+.checkbox p {
     margin-left: 7px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
 }
 
-.index-form-checkbox span {
+.checkbox span {
     color: var(--index-link-color);
     text-decoration: underline;
     cursor: pointer;
