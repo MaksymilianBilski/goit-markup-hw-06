@@ -351,38 +351,49 @@ figure {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox{
+.index-checkbox{
+}
+
+.checkbox {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     margin: 20px 77px 30px 54px;
+    position: relative;
 }
 
-.index-checkbox::before{
+.test::before {
     content: "";
-    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+.index-checkbox:checked+.test::before {
+    background-image: url(../images/iconcheck.svg);
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
 }
 
-.checkbox:checked+.index-checkbox::before {
-    background-image: url(../images/iconcheck.svg);
-    border: none;
-    width: 12px;
-    height: 20px;
-    content: "";
-    display: inline-block;
+.index-checkbox:checked {
+    visibility: hidden;
 }
 
 .checkbox p {
     margin-left: 7px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 .checkbox span {
