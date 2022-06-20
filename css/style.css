@@ -301,6 +301,7 @@ figure {
 
 .user-place {
     padding-left: 45px;
+    font-size: 14px;
 }
 
 .index-modal-user {
@@ -311,6 +312,7 @@ figure {
 
 .tel-place {
     padding-left: 45px;
+    font-size: 14px;
 }
 
 .index-modal-tel {
@@ -321,6 +323,7 @@ figure {
 
 .email-place {
     padding-left: 45px;
+    font-size: 14px;
 }
 
 .index-modal-email {
@@ -335,6 +338,7 @@ figure {
     margin-left: 40px;
     padding-left: 16px;
     padding-bottom: 81px;
+    font-size: 14px;
 }
 
 .comment-place::placeholder {
@@ -355,7 +359,14 @@ figure {
     margin: 20px 77px 30px 54px;
 }
 
-.index-checkbox:checked+.index-checkbox::before {
+.index-checkbox::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked+.index-checkbox::before {
     background-image: url(../images/iconcheck.svg);
     border: none;
     width: 12px;
