@@ -351,9 +351,6 @@ figure {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.index-checkbox{
-}
-
 .checkbox {
     display: flex;
     flex-direction: row;
@@ -363,7 +360,7 @@ figure {
     position: relative;
 }
 
-.test::before {
+.policy-text::before {
     content: "";
     width: 16px;
     height: 16px;
@@ -372,7 +369,7 @@ figure {
     top: 3px;
 }
 
-.index-checkbox:checked+.test::before {
+.index-checkbox:checked+.policy-text::before {
     background-image: url(../images/iconcheck.svg);
     content: "";
     display: flex;
