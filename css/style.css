@@ -467,6 +467,12 @@ figure {
 
 
 /* INDEX-LOREM*/
+.index-loremipsum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 
 .index-lorem-icon {
     width: 270px;
@@ -480,13 +486,6 @@ figure {
 
 .index-lorem-icon svg {
     margin: 0 auto;
-}
-
-.index-loremipsum {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
 
 .index-loremipsum h3 {
